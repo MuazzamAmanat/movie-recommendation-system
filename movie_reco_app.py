@@ -6,7 +6,7 @@ import requests
 
 
 st.set_page_config(
-    page_title="Movie AI Recommendation",
+    page_title="AI Movies Recommendation",
     layout="wide"
 )
 
@@ -53,7 +53,7 @@ def recommend(movie):
     
     return recommended_movies, recommended_posters, recommended_links
 
-st.title("Movie Recommendation System")
+st.title("AI Movies Recommendation System")
 
 selected_movie = st.selectbox("Select a Movie", movies["title"].values)
 
